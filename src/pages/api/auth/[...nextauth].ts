@@ -58,7 +58,7 @@ export default NextAuth({
   jwt: {
     secret: "wWhK//wsakupdu9h7bp0WYCutRfcIfEFC9iJHO4LYGE=",
   },
-  pages: {
-    signIn: "/signIn",
-  },
+  // pages: {
+  //   signIn: "/login",
+  // },
 });
