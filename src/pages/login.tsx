@@ -6,8 +6,8 @@ const Login = () => {
   const { data: session } = useSession();
 
   return (
-    <main >
-      <h1 >
+    <main style={{ maxWidth: "960px", margin: "auto" }}>
+      <h1>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
       {!session && (
@@ -22,11 +22,6 @@ const Login = () => {
           <button onClick={() => signOut()}>Sign out</button>
         </>
       )}
-      <div>
-        <Link href="/private">
-          <a>Go to private page</a>
-        </Link>
-      </div>
     </main>
   );
 };
